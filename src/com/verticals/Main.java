@@ -12,9 +12,8 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        if (args.length < 1) return;
 
-        InputManager.load(args[0]);
+        InputManager.load("com/verticals/parameters.txt");
         Board board = BoardManager.CreateBoard();
         BFS bfs = new BFS();
         List<Board> solutions = bfs.run(board);
