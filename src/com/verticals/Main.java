@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.util.*;
 
 public class Main {
-    private static Queue<Board> boards = new ArrayDeque<>();
 
     public static void main(String[] args) throws IOException {
         if (args.length < 1) return;
